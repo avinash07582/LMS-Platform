@@ -292,7 +292,7 @@ const AdminUpdate = () => {
     e.preventDefault();
     try {
       const response = await axios.patch(
-        `http://localhost:5000/api/admin/users/update/${params.id}`,
+        `https://lms-platform-backend-psal.onrender.com/api/admin/users/update/${params.id}`,
         data,
         {
           headers: {
