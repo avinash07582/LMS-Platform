@@ -112,7 +112,7 @@ const AdminUsers = () => {
 
   const deleteUser = async (id) => {
     try {
-      const response = await axios.delete(`http://localhost:5000/api/admin/users/delete/${id}`, {
+      const response = await axios.delete(`https://lms-platform-backend-psal.onrender.com/api/admin/users/delete/${id}`, {
         headers: {
           Authorization: authorizationToken,
         },
