@@ -320,7 +320,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/form/contact`,
+        `https://lms-platform-backend-psal.onrender.com/api/form/contact`,
         contact,
         {
           headers: {
