@@ -32,7 +32,7 @@ const handleSubmit = async (e) => {
   console.log("📤 Sending user data:", user);
 
   try {
-    const response = await axios.post(`http://localhost:5000/api/auth/register`, user, {
+    const response = await axios.post(`https://lms-platform-backend-psal.onrender.com/api/auth/register`, user, {
       headers: {
         "Content-Type": "application/json"
       },
