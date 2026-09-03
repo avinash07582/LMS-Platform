@@ -86,7 +86,7 @@ const AdminContacts = () => {
   // };
      const deleteContact = async(id)=>{
       try {
-        const response = axios.delete(`http://localhost:5000/api/admin/contacts/delete/${id}`,{
+        const response = axios.delete(`https://lms-platform-backend-psal.onrender.com/api/admin/contacts/delete/${id}`,{
           headers:{
             Authorization: authorizationToken,
 
