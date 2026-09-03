@@ -108,7 +108,7 @@ const handleSubmit = async (e) => {
 
   try {
     const response = await axios.post(
-      `http://localhost:5000/api/auth/login`,
+      `https://lms-platform-backend-psal.onrender.com/api/auth/login`,
       user,
       {
         headers: {
