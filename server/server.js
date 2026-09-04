@@ -11,12 +11,14 @@ const connectDb = require("./utils/db")
 const errorMiddleware = require("./middlewares/error-middleware")
 
 // handling cors
-const corsOptions ={
-
-    origin:"http://localhost:5173",
-    methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
-    credentials:true
-}
+const corsOptions = {
+    origin: [
+        "http://localhost:5173",
+        "https://lms-platform-apii.onrender.com"
+    ],
+    methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
+    credentials: true
+};
 app.use(cors(corsOptions))
 
 app.use(express.json())
