@@ -14,7 +14,7 @@ const errorMiddleware = require("./middlewares/error-middleware")
 const corsOptions = {
     origin: [
         "http://localhost:5173",
-        "https://lms-platform-apii.onrender.com"
+        "https://lms-platform-backend-psal.onrender.com"
     ],
     methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
     credentials: true
