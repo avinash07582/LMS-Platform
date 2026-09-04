@@ -31,7 +31,7 @@ export const AuthContext = createContext();
     const  userAuthentication = async  ()=>{
         try {
             // setIsLoading(true)
-            const response = await axios.get(`http://localhost:5000/api/auth/user`,{
+            const response = await axios.get(`https://lms-platform-backend-psal.onrender.com/api/auth/user`,{
                 headers: {
                     Authorization: authorizationToken
                   },
@@ -57,7 +57,7 @@ export const AuthContext = createContext();
 
     const getServices = async()=>{
         try {
-            const response = await axios.get(`http://localhost:5000/api/data/service`)
+            const response = await axios.get(`https://lms-platform-backend-psal.onrender.com/api/data/service`)
             if(response){
                 console.log("serverice data",response.data.response);
                 setServiceData(response.data.response)
