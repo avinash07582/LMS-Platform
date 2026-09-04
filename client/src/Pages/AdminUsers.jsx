@@ -11,7 +11,7 @@ const AdminUsers = () => {
 
   const getAllUsersData = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/admin/users`, {
+      const response = await axios.get(`https://lms-platform-backend-psal.onrender.com/api/admin/users`, {
         headers: {
           'Content-Type': 'application/json',
           Authorization: authorizationToken,
