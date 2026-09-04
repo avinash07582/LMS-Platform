@@ -1,37 +1,4 @@
-// const jwt = require("jsonwebtoken");
-// const User = require("../models/user-model");
 
-// const authMiddleware =  async (req,res,next)=>{
-//        const token = req.header('Authorization');
-//        if(!token){
-//         return res.status(401).json({msg:"Unauthrosied HTTP,Token not provided"})
-//        }
-      
-
-//     //    const jwtToken = token.replace("Bearer ", "").trim(); // ✅ notice the space after Bearer
-//     //    console.log("Token from authMiddleware:", jwtToken);
-
-//        try {
-//         const jwtToken = token.replace("Bearer ", "").trim(); // ✅ notice the space after Bearer
-//        console.log("Token from authMiddleware:", jwtToken);
-
-//         const isVerfied = jwt.verify(jwtToken,process.env.JWT_SECRET_KEY)
-//         // console.log(isVerfied);
-        
-//         const userData = await User.findOne({email:isVerfied.email})
-//         console.log(userData);
-        
-//         next();
-        
-//        } catch (error) {
-//         return res.status(401).json({msg:"Unauthorizzed token"})
-        
-//        }
-      
-       
-
-
-// }
 
 
 const jwt = require("jsonwebtoken");
