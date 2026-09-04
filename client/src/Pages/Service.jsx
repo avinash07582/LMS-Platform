@@ -6,18 +6,7 @@ const Service = () => {
    
 
 
-  // const handleCards = async()=>{
-  //     const response = await axios.get(`http://localhost:5000/api/data/service`,{
-  //       headers: {
-  //         "Content-Type": "application/json"
-  //       },
-  //     })
-  //     setServiceData(response)
-  // }
-
-  // useEffect(()=>{
-  //   handleCards()
-  // },[])
+  
   return (
     
     <div className="min-h-screen  text-white px-6 py-10">
