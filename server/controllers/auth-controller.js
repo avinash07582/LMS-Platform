@@ -28,7 +28,7 @@ const bcrypt = require("bcrypt")
 console.log("User Created:", userCreated);
    
     
-    res.status(200).send({
+    res.status(201).send({
         message:"User Registered Sucessfully",
          userCreated,
          token: await
