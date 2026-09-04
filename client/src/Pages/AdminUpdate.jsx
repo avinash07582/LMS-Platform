@@ -18,7 +18,7 @@ const AdminUpdate = () => {
   const getSingleUserData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/admin/users/${params.id}`,
+        `https://lms-platform-backend-psal.onrender.com/api/admin/users/${params.id}`,
         {
           headers: {
             Authorization: authorizationToken,
